@@ -1,0 +1,16 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+}
