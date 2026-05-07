@@ -1,56 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheeza | Frontend Portfolio</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<!-- HERO -->
-<section class="hero">
-    <h1>Hi, I am a Frontend Web Designer</h1>
-    <p>I create modern responsive websites using HTML, CSS and JavaScript.</p>
-</section>
+    <!-- HERO SECTION -->
+    <section class="bg-black text-white py-24 px-6 text-center">
+        <h1 class="text-4xl md:text-6xl font-black mb-4 tracking-tight">Hi, I am a <span class="text-pink-500">Frontend Web Designer</span></h1>
+        <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">I create modern responsive websites using HTML, CSS and JavaScript.</p>
+    </section>
 
-<!-- ABOUT -->
-<section class="about">
-    <h2>About Me</h2>
-    <p>I design clean and responsive websites for small businesses like clothing stores, salons and bakeries.</p>
-</section>
+    <!-- ABOUT SECTION -->
+    <section class="py-20 px-6 text-center bg-white">
+        <h2 class="text-3xl font-bold mb-6 relative inline-block">
+            About Me
+            <span class="absolute bottom-0 left-0 w-full h-1 bg-pink-500 rounded-full"></span>
+        </h2>
+        <p class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed mt-4">
+            I design clean and responsive websites for small businesses like clothing stores, salons, and bakeries. My goal is to help businesses grow with a strong online presence.
+        </p>
+    </section>
 
-<!-- PROJECTS -->
-<section class="projects">
-    <h2>My Projects</h2>
+    <!-- PROJECTS SECTION -->
+    <section class="py-20 px-6 bg-gray-50 max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-16 uppercase tracking-widest">My Projects</h2>
 
-    <div class="project-box">
-        <img src="image1.jpg" alt="">
-        <h3>Clothing Store</h3>
-        <a href="https://sheeza-bit.github.io/clothing-store/" target="_blank">View Website</a>
-    </div>
+        <!-- Grid Container - Yeh alignment fix karega -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
+            
+            <!-- Project 1 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300">
+                <img src="image1.jpg" alt="Clothing Store" class="w-full h-64 object-cover">
+                <div class="p-8 text-center">
+                    <h3 class="text-2xl font-bold mb-4">Clothing Store</h3>
+                    <a href="https://sheeza-bit.github.io/clothing-store/" target="_blank" 
+                       class="inline-block bg-pink-600 text-white px-8 py-3 rounded-full font-bold hover:bg-pink-700 transition transform hover:scale-105">
+                        View Website
+                    </a>
+                </div>
+            </div>
 
-    <div class="project-box">
-        <img src="image2.jpg" alt="">
-        <h3>Bakery Website</h3>
-        <a href="https://sheeza-bit.github.io/sweet-treats-bakery/" target="_blank">View Website</a>
-    </div>
-    
-    <div class="project-box">
-        <img src="image3.jpg" alt="">
-        <h3>Glow & Grace Beauty Salon</h3>
-        <a href="https://sheeza-bit.github.io/Beauty-saloon/" target
-        ="_blank">View website
-      </div>
-      <div class="project-box">
-        <img src="image4.jpg" alt="">
-        <h3>The Spice Garden Resturant</h3>
-      <a href="https://sheeza-bit.github.io/spice-garden-tailwind-/" target
-        ="_blank">View website
-</section>
-<!-- CONTACT -->
-<section class="contact">
-    <h2>Contact Me</h2>
-    <p>Email: sheezamaryam65@email.com</p>
-</section>
+            <!-- Project 2 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300">
+                <img src="image2.jpg" alt="Bakery Website" class="w-full h-64 object-cover">
+                <div class="p-8 text-center">
+                    <h3 class="text-2xl font-bold mb-4">Bakery Website</h3>
+                    <a href="https://sheeza-bit.github.io/sweet-treats-bakery/" target="_blank" 
+                       class="inline-block bg-pink-600 text-white px-8 py-3 rounded-full font-bold hover:bg-pink-700 transition transform hover:scale-105">
+                        View Website
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300">
+                <img src="image3.jpg" alt="Beauty Salon" class="w-full h-64 object-cover">
+                <div class="p-8 text-center">
+                    <h3 class="text-2xl font-bold mb-4">Glow & Grace Beauty Salon</h3>
+                    <a href="https://sheeza-bit.github.io/Beauty-saloon/" target="_blank" 
+                       class="inline-block bg-pink-600 text-white px-8 py-3 rounded-full font-bold hover:bg-pink-700 transition transform hover:scale-105">
+                        View Website
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition duration-300 border-2 border-pink-100">
+                <img src="image4.jpg" alt="Spice Garden" class="w-full h-64 object-cover">
+                <div class="p-8 text-center">
+                    <h3 class="text-2xl font-bold mb-4">The Spice Garden Restaurant</h3>
+                    <a href="https://sheeza-bit.github.io/spice-garden-tailwind-/" target="_blank" 
+                       class="inline-block bg-pink-600 text-white px-8 py-3 rounded-full font-bold hover:bg-pink-700 transition transform hover:scale-105">
+                        View Website
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="py-20 px-6 bg-pink-600 text-white text-center">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+            <p class="text-xl mb-4">Interested in working together?</p>
+            <div class="bg-white text-gray-900 p-6 rounded-2xl shadow-xl inline-block">
+                <p class="text-lg font-semibold">Email: <a href="mailto:sheezamaryam65@email.com" class="text-pink-600 hover:underline">sheezamaryam65@email.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-white text-center text-gray-500 text-sm border-t border-gray-100">
+        &copy; 2026 Sheeza Portfolio. All rights reserved.
+    </footer>
 
 </body>
 </html>
