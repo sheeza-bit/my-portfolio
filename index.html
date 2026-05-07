@@ -3,89 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sheeza | Frontend Designer Portfolio</title>
+  <title>Sheeza Maryam | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
-    .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
 
 <!-- HERO SECTION -->
-<section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 text-white px-6 relative overflow-hidden">
-  <!-- Decorative Circles -->
-  <div class="absolute top-0 -left-20 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-0 -right-20 w-96 h-96 bg-indigo-900/20 rounded-full blur-3xl"></div>
-
-  <div class="relative z-10 text-center">
-    <h2 class="text-xl md:text-2xl font-medium mb-4 tracking-widest uppercase opacity-90">Hi, I am a Frontend Web Designer</h2>
-    <h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-6 uppercase">Sheeza <span class="text-indigo-200">Maryam</span></h1>
-    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light opacity-80 leading-relaxed">
-      I create modern, high-performance, and responsive websites using <span class="font-bold text-white">Tailwind CSS</span>, HTML, and JavaScript.
+<section class="min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-indigo-700 via-purple-700 to-pink-600 text-white px-6 text-center relative overflow-hidden">
+  <div class="relative z-10">
+    <h2 class="text-xl md:text-2xl font-medium mb-4 tracking-widest uppercase opacity-80 italic">Frontend Web Designer</h2>
+    <h1 class="text-6xl md:text-8xl font-black mb-6 uppercase tracking-tighter">Sheeza <span class="text-indigo-200">Maryam</span></h1>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light opacity-90 leading-relaxed">
+      I create modern, responsive websites for small businesses like Clothing Stores, Salons, Bakeries, and Restaurants.
     </p>
-    <div class="flex flex-col md:flex-row gap-4 justify-center">
-      <a href="#projects" class="bg-white text-indigo-600 px-10 py-4 rounded-full font-bold text-lg shadow-2xl hover:bg-indigo-50 transition transform hover:scale-105">View My Work</a>
-      <a href="#contact" class="bg-transparent border-2 border-white/50 px-10 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition">Contact Me</a>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT SECTION -->
-<section id="about" class="py-24 px-6 max-w-5xl mx-auto">
-  <div class="bg-white rounded-[3rem] p-12 md:p-20 shadow-xl border border-slate-100 flex flex-col md:flex-row items-center gap-12">
-    <div class="md:w-1/3">
-        <div class="w-48 h-48 bg-indigo-100 rounded-[3rem] rotate-12 flex items-center justify-center text-6xl shadow-inner">👩‍💻</div>
-    </div>
-    <div class="md:w-2/3">
-      <h2 class="text-4xl font-extrabold mb-6 text-slate-800">About Me</h2>
-      <p class="text-xl text-slate-600 leading-relaxed">
-        I specialize in designing clean and responsive websites for small businesses like 
-        <span class="text-indigo-600 font-semibold underline decoration-indigo-100">Clothing Stores</span>, 
-        <span class="text-pink-500 font-semibold underline decoration-pink-100">Salons</span>, and 
-        <span class="text-orange-500 font-semibold underline decoration-orange-100">Bakeries</span>. 
-        My focus is on providing the best user experience with a modern aesthetic.
-      </p>
-    </div>
+    <a href="#projects" class="bg-white text-indigo-700 px-10 py-4 rounded-full font-bold text-lg shadow-2xl hover:bg-indigo-50 transition transform hover:scale-105 inline-block">View My Work</a>
   </div>
 </section>
 
 <!-- PROJECTS SECTION -->
-<section id="projects" class="py-24 bg-slate-100 px-6">
-  <div class="max-w-7xl mx-auto text-center">
-    <h2 class="text-5xl font-black mb-4 uppercase tracking-tighter">My Projects</h2>
-    <p class="text-slate-500 mb-16 italic text-lg tracking-widest">Handcrafted with Tailwind CSS</p>
+<section id="projects" class="py-24 bg-white px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+        <h2 class="text-4xl font-black uppercase tracking-widest italic border-b-4 border-indigo-600 inline-block">My Projects</h2>
+        <p class="text-slate-500 mt-4">Modern responsive web designs crafted with Tailwind CSS</p>
+    </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
       
-      <!-- Project 1 -->
-      <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-        <div class="h-64 bg-indigo-600 flex items-center justify-center text-6xl group-hover:scale-110 transition duration-500">👗</div>
+      <!-- Project 1: Clothing Store -->
+      <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-slate-100 hover:shadow-2xl transition-all group">
+        <div class="h-64 bg-slate-200 overflow-hidden">
+          <img src="image1.jpg" alt="Clothing Store" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+        </div>
         <div class="p-8">
-          <h3 class="text-2xl font-bold mb-3">Clothing Store</h3>
-          <p class="text-slate-500 mb-6">A high-fashion store featuring modern UI and responsive product grids.</p>
-          <a href="#" class="inline-block bg-slate-900 text-white px-8 py-3 rounded-full font-bold hover:bg-indigo-600 transition">Live Website</a>
+          <h3 class="text-2xl font-bold mb-2 uppercase tracking-tight">Clothing Store</h3>
+          <p class="text-slate-500 mb-6 italic text-sm">Quality clothing and shoes at the best prices.</p>
+          <a href="https://sheeza-bit.github.io/clothing-store/" target="_blank" class="inline-block bg-indigo-600 text-white px-8 py-3 rounded-2xl font-bold hover:bg-indigo-700 transition shadow-lg">Live Website</a>
         </div>
       </div>
 
-      <!-- Project 2 -->
-      <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-        <div class="h-64 bg-orange-400 flex items-center justify-center text-6xl group-hover:scale-110 transition duration-500">🍰</div>
+      <!-- Project 2: Sweet Treats Bakery -->
+      <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-slate-100 hover:shadow-2xl transition-all group">
+        <div class="h-64 bg-slate-200 overflow-hidden">
+          <img src="image2.jpg" alt="Sweet Treats Bakery" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+        </div>
         <div class="p-8">
-          <h3 class="text-2xl font-bold mb-3">Bakery Website</h3>
-          <p class="text-slate-500 mb-6">Sweet Treats Bakery with a warm theme and delicious product gallery.</p>
-          <a href="#" class="inline-block bg-slate-900 text-white px-8 py-3 rounded-full font-bold hover:bg-orange-600 transition">Live Website</a>
+          <h3 class="text-2xl font-bold mb-2 uppercase tracking-tight">Sweet Treats Bakery</h3>
+          <p class="text-slate-500 mb-6 italic text-sm">Fresh cakes for every occasion baked with love.</p>
+          <a href="https://sheeza-bit.github.io/sweet-treats-bakery/" target="_blank" class="inline-block bg-orange-600 text-white px-8 py-3 rounded-2xl font-bold hover:bg-orange-700 transition shadow-lg">Live Website</a>
         </div>
       </div>
 
-      <!-- Project 3 -->
-      <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group">
-        <div class="h-64 bg-pink-500 flex items-center justify-center text-6xl group-hover:scale-110 transition duration-500">✨</div>
+      <!-- Project 3: Beauty Salon -->
+      <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-slate-100 hover:shadow-2xl transition-all group">
+        <div class="h-64 bg-slate-200 overflow-hidden">
+          <img src="image3.jpg" alt="Glow & Grace Salon" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+        </div>
         <div class="p-8">
-          <h3 class="text-2xl font-bold mb-3">Beauty Salon</h3>
-          <p class="text-slate-500 mb-6">Glow & Grace salon website with service booking and luxury styling.</p>
-          <a href="#" class="inline-block bg-slate-900 text-white px-8 py-3 rounded-full font-bold hover:bg-pink-600 transition">Live Website</a>
+          <h3 class="text-2xl font-bold mb-2 uppercase tracking-tight">Glow & Grace Salon</h3>
+          <p class="text-slate-500 mb-6 italic text-sm">Professional beauty services with care and perfection.</p>
+          <a href="https://sheeza-bit.github.io/Beauty-saloon/" target="_blank" class="inline-block bg-rose-600 text-white px-8 py-3 rounded-2xl font-bold hover:bg-rose-700 transition shadow-lg">Live Website</a>
+        </div>
+      </div>
+
+      <!-- Project 4: The Spice Garden -->
+      <div class="bg-white rounded-[2.5rem] overflow-hidden shadow-xl border border-slate-100 hover:shadow-2xl transition-all group">
+        <div class="h-64 bg-slate-200 overflow-hidden">
+          <img src="image4.jpg" alt="The Spice Garden Restaurant" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-bold mb-2 uppercase tracking-tight text-green-700">The Spice Garden</h3>
+          <p class="text-slate-500 mb-6 italic text-sm">Authentic Asian spices and fresh organic ingredients.</p>
+          <a href="https://sheeza-bit.github.io/spice-garden-tailwind-/" target="_blank" class="inline-block bg-green-600 text-white px-8 py-3 rounded-2xl font-bold hover:bg-green-700 transition shadow-lg">Live Website</a>
         </div>
       </div>
 
@@ -94,21 +87,20 @@
 </section>
 
 <!-- CONTACT SECTION -->
-<section id="contact" class="py-24 px-6 text-center">
-  <div class="max-w-3xl mx-auto bg-white p-12 md:p-20 rounded-[4rem] shadow-2xl">
-    <h2 class="text-4xl font-black mb-6 uppercase tracking-tighter">Contact Me</h2>
-    <p class="text-xl text-slate-500 mb-10 italic">Let's work together on your next project!</p>
-    <a href="mailto:sheezamaryam65@email.com" class="text-2xl md:text-3xl font-bold text-indigo-600 hover:text-pink-600 transition break-words underline">
+<section id="contact" class="py-24 bg-slate-900 text-white text-center px-6">
+  <div class="max-w-2xl mx-auto">
+    <h2 class="text-4xl font-black mb-6 uppercase">Let's Work Together</h2>
+    <p class="text-xl text-slate-400 mb-10 font-light">Available for new projects and freelance opportunities.</p>
+    <a href="mailto:sheezamaryam65@email.com" class="text-2xl md:text-3xl font-bold text-indigo-400 hover:text-white transition underline underline-offset-8">
         sheezamaryam65@email.com
     </a>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="py-12 text-center text-slate-400 text-sm uppercase tracking-widest">
-  <p>© 2026 Sheeza Maryam. All Rights Reserved.</p>
+<footer class="py-10 bg-black text-center text-slate-500 text-xs tracking-widest uppercase">
+  <p>© 2026 Sheeza Maryam | All Rights Reserved</p>
 </footer>
 
 </body>
 </html>
-                
